@@ -104,6 +104,21 @@ img {
     background-color: var(--boolzapp-header);
     min-height: 100px;
     padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-chat{
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.chat-menu{
+    gap: 1.5rem;
+    color: var(--boolzapp-icon);
+    padding-right: 1.5rem;
+    font-size: 2rem;
 }
 
 .chat-screen {
@@ -120,6 +135,10 @@ img {
 
 #sent .card {
     background-color: var(--boolzapp-sent);
+}
+
+#received .card{
+    background-color: white;
 }
 
 
@@ -146,6 +165,11 @@ img {
 
 @media screen and (max-width: 991px) {
 
+    .container{
+        width: 100vw;
+        height: 100vh;
+    }
+
     .left {
         width: 15%;
     }
@@ -169,6 +193,16 @@ img {
     .search {
         display: none;
     }
+
+}
+
+@media screen and (max-width: 540px) {
+    
+    .left{
+        display: none;
+    }
+
+
 
 }
 
