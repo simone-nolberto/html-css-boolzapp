@@ -14,9 +14,9 @@
     --boolzapp-write: rgba(244, 238, 233, 1);
 }
 
-body{
+/* body{
     background-image: linear-gradient(rgba(0, 153, 136, 1), rgba(218, 219, 211, 1) 15vh);
-}
+} */
 
 .df{
     display: flex;
@@ -25,10 +25,10 @@ body{
 
 .container{
     width: 80%;
-    min-height: 900px;
     margin: 2rem auto;
     border: 1px solid;
 }
+
 /* img{
     width: 100px;
     border-radius: 50%;
@@ -52,6 +52,16 @@ body{
     background-color: var(--boolzapp-alert);
 }
 
+.search{
+    display: flex;
+    justify-content: center;
+    & > input{
+        width: 90%;
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+}
+
 .chat{
     min-height: 100px;
     background-color: white;
@@ -69,4 +79,21 @@ body{
     background-color: var(--boolzapp-header);
     height: 100px;
 }
+
+.chat-text{
+    height: 600px;
+    background-image: url(../img/mine.jpg);
+}
+
+.col-6{
+    width: calc(100%/2);
+}
+
+.write-your-message{
+    background-color: var(--boolzapp-write);
+    height: 100px;
+}
+
+
+
 /* #endregion main */
