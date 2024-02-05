@@ -4,3 +4,38 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;;
 }
+
+:root{
+    --boolzapp-bg-1: rgba(0, 153, 136, 1);
+    --boolzapp-bg-2: rgba(218, 219, 211, 1);
+    --boolzapp-alert: rgba(116, 221, 255, 1);
+    --boolzapp-sent: rgba(204, 250, 179, 1);
+    --boolzapp-header: rgba(234, 234, 234, 1);
+    --boolzapp-write: rgba(244, 238, 233, 1);
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 153, 136, 1), rgba(218, 219, 211, 1) 15vh);
+}
+
+.background-top{
+    background-color: var(--boolzapp-bg-1);
+    height: 15vh;
+}
+
+.background-bottom{
+    background-color: var(--boolzapp-bg-2);
+    height: 85vh;
+}
+
+/* #region main */
+
+.container{
+    width: 80%;
+    min-height: 900px;
+    margin: 2rem auto;
+    border: 1px solid;
+}
+
+
+/* #endregion main */
