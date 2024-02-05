@@ -31,7 +31,7 @@ body {
 .container {
     width: 80%;
     margin: 2rem auto;
-    /* border: 1px solid; */
+
 }
 
 img {
@@ -67,14 +67,14 @@ img {
     gap: 1.5rem;
 }
 
-.alert i{
+.alert i {
     background-color: white;
     color: var(--boolzapp-alert);
     border-radius: 50%;
     padding: 1.5rem;
 }
 
-.alert a{
+.alert a {
     color: var(--boolzapp-icon);
 
 }
@@ -99,7 +99,7 @@ img {
 .chat {
     min-height: 100px;
     background-color: white;
-    border-top: 1px  solid lightgray;
+    border-top: 1px solid lightgray;
     align-items: center;
     gap: 2rem;
     padding: 0.5rem;
@@ -110,7 +110,8 @@ img {
 
 .right {
     width: calc((100%/12)*8);
-    border: 1px solid lightgrey;
+    height: 100%;
+    border-left: 1px solid lightgrey;
 }
 
 .right-nav {
@@ -121,13 +122,13 @@ img {
     align-items: center;
 }
 
-.open-chat{
+.open-chat {
     align-items: center;
     gap: 1.5rem;
 }
 
 
-.chat-menu{
+.chat-menu {
     gap: 1.5rem;
     color: var(--boolzapp-icon);
     padding-right: 1.5rem;
@@ -137,6 +138,13 @@ img {
 .chat-screen {
     min-height: 600px;
     background-image: url(../img/mine.jpg);
+    display: flex;
+}
+
+.small-box {
+    width: 80%;
+    margin: 6rem auto;
+    position: relative;
 }
 
 .card {
@@ -144,14 +152,19 @@ img {
     padding: 1rem;
     border-radius: 2rem;
     height: fit-content;
+    width: 50%;
 }
 
-#sent .card {
+.card.sent {
     background-color: var(--boolzapp-sent);
+    position: absolute;
+    right: 0;
 }
 
-#received .card{
+.card.received {
     background-color: white;
+    position: absolute;
+    top: 40%;
 }
 
 
@@ -171,21 +184,20 @@ img {
 
 
 
-
-
 /* #endregion main */
 
 /* #region media query */
 
 @media screen and (max-width: 991px) {
 
-    .container{
+    .container {
         width: 100vw;
         height: 100vh;
     }
 
     .left {
         width: 15%;
+        height: 100%;
     }
 
     .right {
@@ -211,16 +223,23 @@ img {
 }
 
 @media screen and (max-width: 540px) {
-    
-    .left{
+
+    .left {
         display: none;
     }
 
-    .right{
-        width: 100%;
-        height: 100%;
+    .right {
+        width: 100vw;
+        height: 100vh;
     }
 
+    .chat-menu {
+        display: none;
+    }
+
+    .write-your-message i {
+        display: none;
+    }
 
 }
 
