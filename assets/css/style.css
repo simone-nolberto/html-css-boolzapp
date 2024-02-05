@@ -1,11 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;;
+    font-family: 'Lato', sans-serif;
+    ;
 }
 
-:root{
+:root {
     --boolzapp-bg-1: rgba(0, 153, 136, 1);
     --boolzapp-bg-2: rgba(218, 219, 211, 1);
     --boolzapp-alert: rgba(116, 221, 255, 1);
@@ -18,12 +19,13 @@
     background-image: linear-gradient(rgba(0, 153, 136, 1), rgba(218, 219, 211, 1) 15vh);
 } */
 
-.df{
+.df {
     display: flex;
 }
+
 /* #region main */
 
-.container{
+.container {
     width: 80%;
     margin: 2rem auto;
     border: 1px solid;
@@ -37,32 +39,33 @@
 /* end common */
 
 
-.left{
+.left {
     width: 40%;
     border: 1px solid lightgrey;
 }
 
-.left-nav{
+.left-nav {
     height: 100px;
     background-color: var(--boolzapp-header);
 }
 
-.alert.debug{
+.alert.debug {
     height: 100px;
     background-color: var(--boolzapp-alert);
 }
 
-.search{
+.search {
     display: flex;
     justify-content: center;
-    & > input{
+
+    &>input {
         width: 90%;
         padding: 1rem;
         margin: 0.5rem;
     }
 }
 
-.chat{
+.chat {
     min-height: 100px;
     background-color: white;
     border: 1px dashed;
@@ -70,36 +73,48 @@
 
 /* end left */
 
-.right{
+.right {
     width: 60%;
     border: 1px solid lightgrey;
 }
 
-.right-nav{
+.right-nav {
     background-color: var(--boolzapp-header);
     height: 100px;
 }
 
-.chat-text{
+.chat-screen {
     height: 600px;
     background-image: url(../img/mine.jpg);
 }
 
-.col-6{
-    width: calc(100%/2);
+.card{
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: 2rem ;
+    height: fit-content;
 }
 
-.write-your-message{
+#sent .card{
+    background-color: var(--boolzapp-sent);
+}
+
+
+.col-6 {
+    width: calc(100%/2);
+    min-height: 500px;
+    padding: 2rem;
+}
+
+.write-your-message {
     background-color: var(--boolzapp-write);
     height: 100px;
     justify-content: space-around;
     align-items: center;
-
-    
 }
 
-.write-your-message input{
-        width: 80%;
-    }
+.write-your-message input {
+    width: 70%;
+}
 
 /* #endregion main */
