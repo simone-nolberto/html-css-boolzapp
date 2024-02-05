@@ -92,8 +92,14 @@
 .write-your-message{
     background-color: var(--boolzapp-write);
     height: 100px;
+    justify-content: space-around;
+    align-items: center;
+
+    
 }
 
-
+.write-your-message input{
+        width: 80%;
+    }
 
 /* #endregion main */
