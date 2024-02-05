@@ -18,16 +18,9 @@ body{
     background-image: linear-gradient(rgba(0, 153, 136, 1), rgba(218, 219, 211, 1) 15vh);
 }
 
-.background-top{
-    background-color: var(--boolzapp-bg-1);
-    height: 15vh;
+.df{
+    display: flex;
 }
-
-.background-bottom{
-    background-color: var(--boolzapp-bg-2);
-    height: 85vh;
-}
-
 /* #region main */
 
 .container{
@@ -36,6 +29,44 @@ body{
     margin: 2rem auto;
     border: 1px solid;
 }
+/* img{
+    width: 100px;
+    border-radius: 50%;
+} */
+
+/* end common */
 
 
+.left{
+    width: 40%;
+    border: 1px solid lightgrey;
+}
+
+.left-nav{
+    height: 100px;
+    background-color: var(--boolzapp-header);
+}
+
+.alert.debug{
+    height: 100px;
+    background-color: var(--boolzapp-alert);
+}
+
+.chat{
+    min-height: 100px;
+    background-color: white;
+    border: 1px dashed;
+}
+
+/* end left */
+
+.right{
+    width: 60%;
+    border: 1px solid lightgrey;
+}
+
+.right-nav{
+    background-color: var(--boolzapp-header);
+    height: 100px;
+}
 /* #endregion main */
