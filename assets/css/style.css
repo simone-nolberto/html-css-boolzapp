@@ -31,7 +31,7 @@ body {
 .container {
     width: 80%;
     margin: 2rem auto;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 img {
@@ -43,12 +43,10 @@ img {
 
 
 .left {
-    width: 40%;
-    border: 1px solid lightgrey;
+    width: calc((100%/12)*4);
 }
 
 .left-nav {
-    min-height: 100px;
     background-color: var(--boolzapp-header);
     padding: 0.5rem;
     justify-content: space-between;
@@ -62,12 +60,27 @@ img {
     color: var(--boolzapp-icon);
 }
 
-.alert.debug {
-    height: 100px;
+.alert {
     background-color: var(--boolzapp-alert);
+    align-items: center;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.alert i{
+    background-color: white;
+    color: var(--boolzapp-alert);
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.alert a{
+    color: var(--boolzapp-icon);
+
 }
 
 .search {
+    background-color: white;
     display: flex;
     justify-content: center;
 
@@ -86,7 +99,7 @@ img {
 .chat {
     min-height: 100px;
     background-color: white;
-    border: 1px dashed;
+    border-top: 1px  solid lightgray;
     align-items: center;
     gap: 2rem;
     padding: 0.5rem;
@@ -96,7 +109,7 @@ img {
 /* end left */
 
 .right {
-    width: 60%;
+    width: calc((100%/12)*8);
     border: 1px solid lightgrey;
 }
 
@@ -153,11 +166,12 @@ img {
     min-height: 100px;
     justify-content: space-around;
     align-items: center;
+
 }
 
-.write-your-message input {
-    width: 70%;
-}
+
+
+
 
 /* #endregion main */
 
@@ -202,6 +216,10 @@ img {
         display: none;
     }
 
+    .right{
+        width: 100%;
+        height: 100%;
+    }
 
 
 }
