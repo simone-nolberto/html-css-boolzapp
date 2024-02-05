@@ -168,12 +168,6 @@ img {
 }
 
 
-.col-6 {
-    width: calc(100%/2);
-    min-height: 500px;
-    padding: 2rem;
-}
-
 .write-your-message {
     background-color: var(--boolzapp-write);
     min-height: 100px;
