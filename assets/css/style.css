@@ -31,10 +31,10 @@
     border: 1px solid;
 }
 
-/* img{
+img{
     width: 100px;
     border-radius: 50%;
-} */
+}
 
 /* end common */
 
@@ -45,8 +45,9 @@
 }
 
 .left-nav {
-    height: 100px;
+    min-height: 100px;
     background-color: var(--boolzapp-header);
+    padding: 0.5rem;
 }
 
 .alert.debug {
@@ -69,6 +70,9 @@
     min-height: 100px;
     background-color: white;
     border: 1px dashed;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
 }
 
 /* end left */
@@ -80,7 +84,8 @@
 
 .right-nav {
     background-color: var(--boolzapp-header);
-    height: 100px;
+    min-height: 100px;
+    padding: 0.5rem;
 }
 
 .chat-screen {
@@ -118,3 +123,12 @@
 }
 
 /* #endregion main */
+
+/* #region media query */
+
+@media screen and (max-width: 991px){
+    
+}
+
+
+/* #endregion media query */
