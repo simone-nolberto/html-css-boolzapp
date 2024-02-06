@@ -165,24 +165,29 @@ img {
 }
 
 .card-info {
-    width: 200px;
-    height: 100px;
+    width: max-content;
+    height: max-content;
     background-color: white;
-    display: flex;
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
     align-items: center;
     position: absolute;
     right: 0;
-    top: 2rem;
+    top: 0.5rem;
     margin: 1rem;
+    padding: 1.5rem;
     display: none;
 
     >a {
+        display: block;
         text-decoration: none;
         color: black;
     }
+}
+
+.chevron:hover .card-info {
+    display: flex
 }
 
 
