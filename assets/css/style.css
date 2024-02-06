@@ -153,7 +153,39 @@ img {
     border-radius: 2rem;
     height: fit-content;
     width: 50%;
+    position: relative;
 }
+
+.chevron {
+    color: var(--boolzapp-icon);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+}
+
+.card-info {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    margin: 1rem;
+    display: none;
+
+    >a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
 
 .card.sent {
     background-color: var(--boolzapp-sent);
@@ -175,7 +207,7 @@ img {
     align-items: center;
     text-align: center;
 
-    >div:not(:nth-child(2)){
+    >div:not(:nth-child(2)) {
         flex-grow: 1;
     }
 
@@ -185,7 +217,7 @@ img {
 
 }
 
-.write-your-message i{
+.write-your-message i {
     color: var(--boolzapp-icon);
 }
 
