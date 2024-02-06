@@ -84,7 +84,7 @@ img {
     display: flex;
     justify-content: center;
 
-    &>input {
+    >input {
         width: 90%;
         padding: 1rem;
         margin: 0.5rem;
@@ -97,7 +97,6 @@ img {
 }
 
 .chat {
-    min-height: 100px;
     background-color: white;
     border-top: 1px solid lightgray;
     align-items: center;
@@ -136,7 +135,7 @@ img {
 }
 
 .chat-screen {
-    min-height: 600px;
+    height: calc(100%-209px);
     background-image: url(../img/mine.jpg);
     display: flex;
 }
@@ -173,9 +172,7 @@ img {
     min-height: 100px;
     justify-content: space-around;
     align-items: center;
-
 }
-
 
 
 /* #endregion main */
@@ -187,6 +184,7 @@ img {
     .container {
         width: 100vw;
         height: 100vh;
+        margin: 0;
     }
 
     .left {
