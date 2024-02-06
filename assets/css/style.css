@@ -95,7 +95,7 @@ img {
 
 .chat-history {
     height: calc(100% - 273px);
-    overflow:auto;
+    overflow: auto;
 }
 
 .chat {
@@ -117,7 +117,6 @@ img {
 
 .right-nav {
     background-color: var(--boolzapp-header);
-    min-height: 100px;
     padding: 0.5rem;
     justify-content: space-between;
     align-items: center;
@@ -127,7 +126,6 @@ img {
     align-items: center;
     gap: 1.5rem;
 }
-
 
 .chat-menu {
     gap: 1.5rem;
@@ -172,11 +170,31 @@ img {
 
 .write-your-message {
     background-color: var(--boolzapp-write);
-    min-height: 100px;
+    height: 100px;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+
+    >div:not(:nth-child(2)){
+        flex-grow: 1;
+    }
+
+    >div:nth-child(2) {
+        flex-grow: 2;
+    }
+
 }
 
+.write-your-message i{
+    color: var(--boolzapp-icon);
+}
+
+.text-box {
+    width: 100%;
+    height: 80px;
+    padding: 1rem;
+    border-radius: 1rem;
+}
 
 /* #endregion main */
 
@@ -196,7 +214,7 @@ img {
 
     }
 
-    .chat-history{
+    .chat-history {
         height: calc(100% - 109px)
     }
 
