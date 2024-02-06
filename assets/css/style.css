@@ -20,6 +20,7 @@ body {
     background: linear-gradient(to bottom, #009988 0%, #009988 16%, #dadbd3 16%, #dadbd3 20%, #dadbd3 20%, #dadbd3 100%);
     background-repeat: no-repeat;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 .df {
@@ -29,6 +30,7 @@ body {
 /* #region main */
 
 .container {
+    height: 95vh;
     width: 80%;
     margin: 2rem auto;
 
@@ -92,8 +94,8 @@ img {
 }
 
 .chat-history {
-    height: 600px;
-    overflow: scroll;
+    height: calc(100% - 273px);
+    overflow:auto;
 }
 
 .chat {
@@ -135,9 +137,10 @@ img {
 }
 
 .chat-screen {
-    height: calc(100%-209px);
+    height: calc(100% - 209px);
     background-image: url(../img/mine.jpg);
     display: flex;
+    overflow: scroll;
 }
 
 .small-box {
@@ -189,7 +192,12 @@ img {
 
     .left {
         width: 15%;
-        height: 100%;
+
+
+    }
+
+    .chat-history{
+        height: calc(100% - 109px)
     }
 
     .right {
