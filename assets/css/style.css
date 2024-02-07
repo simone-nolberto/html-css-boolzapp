@@ -114,6 +114,12 @@ img {
     padding: 0.5rem;
 }
 
+.chat-leak{
+    width: calc(100% - 93px);
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
 
 /* end left */
 
