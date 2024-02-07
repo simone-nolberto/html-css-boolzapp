@@ -85,11 +85,19 @@ img {
     background-color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
     >input {
-        width: 90%;
+        width: 80%;
         padding: 1rem;
         margin: 0.5rem;
+        border-style: none;
+    }
+
+    >i {
+        color: var(--boolzapp-icon);
+        font-size: x-large;
     }
 }
 
@@ -138,13 +146,9 @@ img {
     height: calc(100% - 209px);
     background-image: url(../img/mine.jpg);
     display: flex;
+    flex-direction: column;
     overflow: scroll;
-}
-
-.small-box {
-    width: 80%;
-    margin: 6rem auto;
-    position: relative;
+    padding: 5rem;
 }
 
 .card {
@@ -154,6 +158,15 @@ img {
     height: fit-content;
     width: 50%;
     position: relative;
+}
+
+.card.sent {
+    background-color: var(--boolzapp-sent);
+    align-self: flex-end;
+}
+
+.card.received {
+    background-color: white;
 }
 
 .chevron {
@@ -189,21 +202,6 @@ img {
 .chevron:hover .card-info {
     display: flex
 }
-
-
-
-.card.sent {
-    background-color: var(--boolzapp-sent);
-    position: absolute;
-    right: 0;
-}
-
-.card.received {
-    background-color: white;
-    position: absolute;
-    top: 40%;
-}
-
 
 .write-your-message {
     background-color: var(--boolzapp-write);
